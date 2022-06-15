@@ -5,6 +5,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>vacancies</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
  <style>
   *{
     box-sizing: border-box;
@@ -18,13 +19,58 @@
     font-family: sans-serif;
     line-height: 1.4;
    }
+
+   .title:hover{
+    animation-name: titlev;
+    animation-duration: 1s;
+
+   }
+
+   .order{
+    background-color: rgb(25, 123, 48);
+    opacity: 0.85;
+    padding: 11px 25px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 13px;
+   }
+
+   .order:hover{
+     background-color: rgb(25, 151, 209);
+   }
+
+   @keyframes titlev{
+    0%{
+        transform: scale(1);
+        opacity: 0.6;
+  
+    }
+    60%{
+        transform: scale(1.1);
+        opacity: 0.8;
+        color: rgb(0, 112, 162);
+  
+    }    
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }}
+
  </style>
+
 </head>
 <body>
  <div class="container">
-  <h1 style="text-align: center; color: rgb(0, 112, 162);">Актуальні ваканcії</h1>
+  <h1 class="animate__animated animate__fadeInDown" style="text-align: center; color: rgb(0, 112, 162);">Актуальні ваканcії</h1>
   <div class="vacancies_1">
-     <h2 class="title" style="color: rgb(25, 123, 48);">
+     <h2 class="title animate__animated animate__fadeInLeft" style="color: rgb(25, 123, 48);">
       1. Senior fullstack (Ruby, React)
      </h2>
      <p class="text">
@@ -49,9 +95,10 @@
       співробітникам виділяються опціони, компенсація до $100/місяць на ( курси/фітнес/конференції тощо.)
 
      </p>
+     <a class="order" href="https://forms.gle/BfpMuJgYshwR6W7c8" target="_blank">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</a>
   </div>
     <div class="vacancies_2">
-     <h2 class="title" style="color: rgb(25, 123, 48);">
+     <h2 class="title animate__animated animate__fadeInLeft" style="color: rgb(25, 123, 48);">
       2.Senior Web Golang Engineer (USA remote)Key skills: 5+ years of experience / Go / Javascript / SQL/NoSQL / Git /
       English B2+
       
@@ -101,10 +148,11 @@
       Work independently and collaborate with other members of the team to ensure successful delivery of projects<br>
 
      </p>
+     <a class="order" href="https://forms.gle/BfpMuJgYshwR6W7c8" target="_blank">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</a>
     </div>
     <div class="vacancies_3">
-     <h2 class="title" style="color: rgb(25, 123, 48);">
-      3 Customer service representative
+     <h2 class="title animate__animated animate__fadeInLeft" style="color: rgb(25, 123, 48);">
+      3. Customer service representative
      </h2>
      <p class="text">
 
@@ -156,6 +204,7 @@
       We offer: • Paid training. • An uncapped commission - highest in the industry! • Bonuses for top performance<br>
 
      </p>
+     <a class="order" href="https://forms.gle/BfpMuJgYshwR6W7c8" target="_blank">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</a>
     </div>
  </div>
   
